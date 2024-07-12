@@ -2,18 +2,18 @@
 
 import React from "react";
 import Button from "./components/Button";
+import Heading1 from "./components/Heading1";
+import Home from "./pages/Home";
 
 function App() {
-  const handleClick = () => {
-    console.log("Button Clicked!");
-  };
-
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <Button content="Get In Touch"/>
-    </div>
+    // <div >
+    //   {/* <Button content="Get In Touch"/> */}
+    //   {/* <Heading1 content={<><span>I develop fullstack</span> solutions that delight and inspire users.</>}/> */}
+    // </div>
+
+    <Home />
   );
 }
-
 
 export default App;

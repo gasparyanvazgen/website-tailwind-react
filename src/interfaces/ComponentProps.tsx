@@ -1,7 +1,7 @@
 // src/interfaces/ComponentProps.ts
 
 interface ComponentProps {
-  content: string;
+  content: string | JSX.Element;
   classNames?: string; // optional
   onClick?: () => void; // optional
 }
