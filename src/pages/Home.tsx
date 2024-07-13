@@ -21,19 +21,20 @@ function Home() {
                             <span className="bg-gradient-to-r from-blue-400 to-gray-300 bg-clip-text text-transparent">Dev.</span>
                         </a>
                         {/* menu button */}
-                        <button onClick={toggleMenu} className="size-6">
+                        <button onClick={toggleMenu} className="size-6 md:hidden">
                             {isOpen ? <XMarkIcon /> : <Bars3Icon />}
                         </button>
-                    </div>
+                    
 
-                    {/* menu */}
-                    <div className={`absolute left-0 top-16 w-full overflow-hidden shadow-lg ${isOpen ? 'block' : 'hidden'}`}>
-                        <div className="container flex flex-col px-5 font-medium mx-auto">
-                            <a href="#" className="my-5 transition duration-75 hover:opacity-50">About</a>
-                            <a href="#" className="my-5 transition duration-75 hover:opacity-50">Services</a>
-                            <a href="#" className="my-5 transition duration-75 hover:opacity-50">Projects</a>
-                            <a href="#" className="my-5 transition duration-75 hover:opacity-50">Articles</a>
-                            <a href="#" className="my-5 transition duration-75 hover:opacity-50">Contact</a>
+                        {/* menu */}
+                        <div className={`absolute left-0 top-16 w-full overflow-hidden shadow-lg ${isOpen ? 'block' : 'hidden'} md:flex md:relative md:top-0 md:shadow-none`}>
+                            <div className="container flex flex-col px-5 font-medium mx-auto md:flex-row md:justify-end">
+                                <a href="#" className="my-5 transition duration-75 hover:opacity-50 md:mx-5">About</a>
+                                <a href="#" className="my-5 transition duration-75 hover:opacity-50 md:mx-5">Services</a>
+                                <a href="#" className="my-5 transition duration-75 hover:opacity-50 md:mx-5">Projects</a>
+                                <a href="#" className="my-5 transition duration-75 hover:opacity-50 md:mx-5">Articles</a>
+                                <a href="#" className="my-5 transition duration-75 hover:opacity-50 md:mx-5">Contact</a>
+                            </div>
                         </div>
                     </div>
                 </nav>
