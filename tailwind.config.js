@@ -14,6 +14,9 @@ module.exports = {
         accentBlueLight: "#dbeafe", // blue-100 // white button hover
         accentBlueDark: "#2563eb", // blue-600, button hover
       },
+      borderRadius: {
+        avatar: "51% 49% 28% 72% / 75% 48% 52% 25%;",
+      },
     },
   },
   plugins: [],
