@@ -6,7 +6,7 @@ import avatar from "../assets/avatar.png";
 
 function Hero() {
   return (
-    <section className="container mx-auto px-5 sm:bg-secondary">
+    <section className="container mx-auto mb-5 px-5">
       <div className="flex flex-col items-center justify-between sm:flex-row sm:gap-5">
         <div className="flex flex-col gap-5 py-5">
           <h1 className="text-4xl font-medium lg:text-6xl xl:text-7xl">
