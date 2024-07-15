@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/website-tailwind-react/static/css/main.818d1747.css",
-    "main.js": "/website-tailwind-react/static/js/main.b7cdf8d3.js",
+    "main.css": "/website-tailwind-react/static/css/main.b5b676b2.css",
+    "main.js": "/website-tailwind-react/static/js/main.28c4add8.js",
     "static/js/453.21055ae6.chunk.js": "/website-tailwind-react/static/js/453.21055ae6.chunk.js",
     "static/media/avatar.png": "/website-tailwind-react/static/media/avatar.0a4bb113016666f283ce.png",
     "index.html": "/website-tailwind-react/index.html",
-    "main.818d1747.css.map": "/website-tailwind-react/static/css/main.818d1747.css.map",
-    "main.b7cdf8d3.js.map": "/website-tailwind-react/static/js/main.b7cdf8d3.js.map",
+    "main.b5b676b2.css.map": "/website-tailwind-react/static/css/main.b5b676b2.css.map",
+    "main.28c4add8.js.map": "/website-tailwind-react/static/js/main.28c4add8.js.map",
     "453.21055ae6.chunk.js.map": "/website-tailwind-react/static/js/453.21055ae6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.818d1747.css",
-    "static/js/main.b7cdf8d3.js"
+    "static/css/main.b5b676b2.css",
+    "static/js/main.28c4add8.js"
   ]
 }
