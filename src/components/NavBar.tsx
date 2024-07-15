@@ -16,12 +16,12 @@ function NavBar() {
                 <nav>
                     <div className="flex items-center justify-between">
                         {/* logo */}
-                        <a href="/" className="text-lg font-medium italic">
+                        <a href="/" className="text-lg md:text-xl lg:text-2xl font-medium italic">
                             Vazgen
                             <span className="bg-gradient-to-r from-accentBlue to-accentBlueLight bg-clip-text text-transparent">Dev.</span>
                         </a>
                         {/* menu button */}
-                        <button onClick={toggleMenu} className="size-6 md:hidden">
+                        <button onClick={toggleMenu} className="size-6 sm:size-7 md:hidden">
                             {isOpen ? <XMarkIcon /> : <Bars3Icon />}
                         </button>
                     
