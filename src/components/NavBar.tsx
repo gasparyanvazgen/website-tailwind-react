@@ -1,65 +1,64 @@
-// src/components/NavBar.tsx
+// sticky site navigation with router-aware section links that work from every page.
 
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
+
+const menuItems = [
+  { name: "About", link: { pathname: "/", hash: "#about" } },
+  { name: "Services", link: { pathname: "/", hash: "#services" } },
+  { name: "Projects", link: { pathname: "/", hash: "#projects" } },
+  { name: "Articles", link: { pathname: "/", hash: "#articles" } },
+];
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false); // false: always closed
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen); // open the menu if closed and vise versa
-  };
-
-  const menuItems = [
-    { name: "About", link: "#" },
-    { name: "Services", link: "#" },
-    { name: "Projects", link: "#" },
-    { name: "Articles", link: "#" },
-    { name: "Contact", link: "#" },
-  ];
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = useCallback(() => setIsOpen((prev) => !prev), []);
+  const closeMenu = useCallback(() => setIsOpen(false), []);
 
   return (
-    <header className="bg-secondary">
-      <div className="container mx-auto px-5 py-5">
+    <>
+      <a
+        href="#main-content"
+        className="sr-only z-[100] rounded-md bg-secondary px-4 py-2 text-primary focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+      >
+        Skip to content
+      </a>
+      <header className="sticky top-0 z-50 border-b border-secondary/10 bg-primary/95 text-secondary backdrop-blur">
+      <div className="container mx-auto px-5 py-4">
         <nav className="flex items-center justify-between">
-          {/* Logo */}
-          <a
-            href="/"
-            className="text-lg font-medium italic md:text-xl lg:text-2xl"
-          >
-            Vazgen
-            {/* Gradient text effect */}
-            <span className="bg-gradient-to-r from-accentBlue to-accentBlueLight bg-clip-text text-transparent">
-              Dev.
-            </span>
-          </a>
+          <Link to="/" className="text-lg font-semibold tracking-tight md:text-xl lg:text-2xl">
+            Vazgen<span className="text-accentBlueLight">Dev.</span>
+          </Link>
 
-          {/* Menu button */}
-          <button onClick={toggleMenu} className="size-6 sm:size-7 md:hidden">
+          <button type="button" onClick={toggleMenu} className="size-7 md:hidden"
+            aria-label={isOpen ? "Close menu" : "Open menu"} aria-expanded={isOpen}>
             {isOpen ? <XMarkIcon /> : <Bars3Icon />}
           </button>
 
-          {/* Menu */}
-          <div
-            className={`absolute left-0 top-16 w-full overflow-hidden bg-secondary shadow-lg ${isOpen ? "block" : "hidden"} md:relative md:top-0 md:flex md:shadow-none`}
-          >
-            <div className="container mx-auto flex flex-col px-5 font-medium md:flex-row md:justify-end">
-              {/* Map over menu items */}
-              {menuItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.link}
-                  className="my-5 transition duration-75 hover:text-secondaryDark md:mx-5"
-                >
+          <div className={`${isOpen ? "block" : "hidden"} absolute left-0 top-[65px] w-full border-b border-secondary/10 bg-primary shadow-xl md:relative md:top-0 md:block md:w-auto md:border-0 md:bg-transparent md:shadow-none`}>
+            <div className="container mx-auto flex flex-col px-5 py-3 font-medium md:flex-row md:items-center md:justify-end md:gap-2 md:p-0">
+              {menuItems.map((item) => (
+                <Link key={item.name} to={item.link} onClick={closeMenu}
+                  className="rounded-full px-4 py-2 text-secondary/75 transition hover:bg-secondary/10 hover:text-secondary">
                   {item.name}
-                </a>
+                </Link>
               ))}
+              <Link to="/contact" onClick={closeMenu}
+                className="rounded-full px-4 py-2 text-secondary/75 transition hover:bg-secondary/10 hover:text-secondary">
+                Contact
+              </Link>
+              <Link to="/contact" onClick={closeMenu}
+                className="mt-2 inline-flex w-fit rounded-full bg-accentBlue px-5 py-2.5 text-sm font-semibold text-secondary shadow-lg shadow-accentBlue/20 transition hover:bg-accentBlueDark md:ml-2 md:mt-0">
+                Hire Me
+              </Link>
             </div>
           </div>
         </nav>
       </div>
-    </header>
+      </header>
+    </>
   );
 }
 
-export default NavBar;
+export default React.memo(NavBar);

@@ -1,9 +1,11 @@
-// src/interfaces/ComponentProps.ts
+// props shared by the small reusable Button component.
+
+import type { ReactNode } from "react";
 
 interface ComponentProps {
-  content: string | JSX.Element;
-  classNames?: string; // optional
-  onClick?: () => void; // optional
+  content: ReactNode;
+  classNames?: string;
+  onClick?: () => void;
 }
 
 export default ComponentProps;
