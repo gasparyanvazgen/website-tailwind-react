@@ -5,12 +5,12 @@ import {
   SiReact,
   SiJavascript,
   SiTypescript,
+  SiNextdotjs,
   SiTailwindcss,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
+  SiShadcnui,
   SiPostgresql,
-  SiDocker,
+  SiSupabase,
+  SiVercel,
   SiGit,
 } from "@icons-pack/react-simple-icons";
 
@@ -20,12 +20,12 @@ const skills = [
   { name: "React", icon: SiReact },
   { name: "JavaScript", icon: SiJavascript },
   { name: "TypeScript", icon: SiTypescript },
+  { name: "Next.js", icon: SiNextdotjs },
   { name: "Tailwind", icon: SiTailwindcss },
-  { name: "Node.js", icon: SiNodedotjs },
-  { name: "Express", icon: SiExpress },
-  { name: "MongoDB", icon: SiMongodb },
+  { name: "shadcn/ui", icon: SiShadcnui },
   { name: "PostgreSQL", icon: SiPostgresql },
-  { name: "Docker", icon: SiDocker },
+  { name: "Supabase", icon: SiSupabase },
+  { name: "Vercel", icon: SiVercel },
   { name: "Git", icon: SiGit },
 ];
 
