@@ -1,16 +1,37 @@
 {
   "files": {
-    "main.css": "/website-tailwind-react/static/css/main.b5b676b2.css",
-    "main.js": "/website-tailwind-react/static/js/main.28c4add8.js",
+    "main.css": "/website-tailwind-react/static/css/main.a6ee5dad.css",
+    "main.js": "/website-tailwind-react/static/js/main.52170db6.js",
+    "static/js/522.dc764fc6.chunk.js": "/website-tailwind-react/static/js/522.dc764fc6.chunk.js",
+    "static/js/319.8481ac06.chunk.js": "/website-tailwind-react/static/js/319.8481ac06.chunk.js",
+    "static/js/909.a789c236.chunk.js": "/website-tailwind-react/static/js/909.a789c236.chunk.js",
+    "static/js/9.5b5af45c.chunk.js": "/website-tailwind-react/static/js/9.5b5af45c.chunk.js",
+    "static/js/555.a711b938.chunk.js": "/website-tailwind-react/static/js/555.a711b938.chunk.js",
+    "static/js/332.ed958d72.chunk.js": "/website-tailwind-react/static/js/332.ed958d72.chunk.js",
+    "static/js/856.ac9cded8.chunk.js": "/website-tailwind-react/static/js/856.ac9cded8.chunk.js",
+    "static/js/569.d97e5ecf.chunk.js": "/website-tailwind-react/static/js/569.d97e5ecf.chunk.js",
     "static/js/453.21055ae6.chunk.js": "/website-tailwind-react/static/js/453.21055ae6.chunk.js",
-    "static/media/avatar.png": "/website-tailwind-react/static/media/avatar.0a4bb113016666f283ce.png",
+    "static/js/234.ba51ffdc.chunk.js": "/website-tailwind-react/static/js/234.ba51ffdc.chunk.js",
+    "static/media/avatar.webp": "/website-tailwind-react/static/media/avatar.52dae70e51940eb1d799.webp",
     "index.html": "/website-tailwind-react/index.html",
-    "main.b5b676b2.css.map": "/website-tailwind-react/static/css/main.b5b676b2.css.map",
-    "main.28c4add8.js.map": "/website-tailwind-react/static/js/main.28c4add8.js.map",
-    "453.21055ae6.chunk.js.map": "/website-tailwind-react/static/js/453.21055ae6.chunk.js.map"
+    "static/media/github-icon-1-logo-svgrepo-com.svg": "/website-tailwind-react/static/media/github-icon-1-logo-svgrepo-com.cbbdd0c902376ddb076c5a0cd253936d.svg",
+    "static/media/linkedin-icon-2-logo-svgrepo-com.svg": "/website-tailwind-react/static/media/linkedin-icon-2-logo-svgrepo-com.9d6c57806071247c3fcb086b59fa3daa.svg",
+    "static/media/gmail-svgrepo-com.svg": "/website-tailwind-react/static/media/gmail-svgrepo-com.87cc67187afd3477d6c29ef768e48834.svg",
+    "main.a6ee5dad.css.map": "/website-tailwind-react/static/css/main.a6ee5dad.css.map",
+    "main.52170db6.js.map": "/website-tailwind-react/static/js/main.52170db6.js.map",
+    "522.dc764fc6.chunk.js.map": "/website-tailwind-react/static/js/522.dc764fc6.chunk.js.map",
+    "319.8481ac06.chunk.js.map": "/website-tailwind-react/static/js/319.8481ac06.chunk.js.map",
+    "909.a789c236.chunk.js.map": "/website-tailwind-react/static/js/909.a789c236.chunk.js.map",
+    "9.5b5af45c.chunk.js.map": "/website-tailwind-react/static/js/9.5b5af45c.chunk.js.map",
+    "555.a711b938.chunk.js.map": "/website-tailwind-react/static/js/555.a711b938.chunk.js.map",
+    "332.ed958d72.chunk.js.map": "/website-tailwind-react/static/js/332.ed958d72.chunk.js.map",
+    "856.ac9cded8.chunk.js.map": "/website-tailwind-react/static/js/856.ac9cded8.chunk.js.map",
+    "569.d97e5ecf.chunk.js.map": "/website-tailwind-react/static/js/569.d97e5ecf.chunk.js.map",
+    "453.21055ae6.chunk.js.map": "/website-tailwind-react/static/js/453.21055ae6.chunk.js.map",
+    "234.ba51ffdc.chunk.js.map": "/website-tailwind-react/static/js/234.ba51ffdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5b676b2.css",
-    "static/js/main.28c4add8.js"
+    "static/css/main.a6ee5dad.css",
+    "static/js/main.52170db6.js"
   ]
 }
