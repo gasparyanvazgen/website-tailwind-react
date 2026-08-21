@@ -18,14 +18,15 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://gasparyanvazgen.github.io/website-tailwind-react/",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build:personal": "cross-env PUBLIC_URL=/ react-scripts build",
+    "build:project": "cross-env PUBLIC_URL=/website-tailwind-react react-scripts build",
+    "deploy:personal": "gh-pages -d build -r git@github.com:gasparyanvazgen/gasparyanvazgen.github.io.git",
+    "deploy:project": "gh-pages -d build -r git@github.com:gasparyanvazgen/website-tailwind-react.git",
+    "deploy:both": "npm run build:personal && npm run deploy:personal && npm run build:project && npm run deploy:project"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.39",
     "prettier": "^3.3.2",
