@@ -4,12 +4,12 @@ import React from "react";
 import avatar from "../assets/images/avatar.webp";
 
 const experience = [
-  { title: "Full-Stack Developer", place: "Freelance", period: "2023 — Present" },
-  { title: "Frontend Developer Intern", place: "Local Tech Startup", period: "2022 — 2023" },
+  { title: "Software Development Intern", place: "Self-employed", period: "2022 — 2023" },
+  { title: "Team Manager", place: "Freelance", period: "Jan 2023 — Jun 2023" },
 ];
 const education = [
-  { title: "B.S. in Computer Science", place: "State University", period: "2019 — 2023" },
-  { title: "Full-Stack Web Development", place: "Online Bootcamp", period: "2021" },
+  { title: "B.S. in Informatics and Mathematics", place: "Ijevan Branch of YSU", period: "2026 - Present" },
+  { title: "Secondary professional education, Computing technology and automated systems programming", place: "Tavush Regional College named after Patrick Devedjian Foundation", period: "2020 — 2024" },
 ];
 
 function AboutMe() {
