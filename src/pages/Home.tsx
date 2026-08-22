@@ -63,14 +63,19 @@ function Home() {
           },
         ]}
       />
+      
       <NavBar />
-      <Hero />
-      <Services />
-      <TechStack />
-      <Projects />
-      <Articles />
-      <AboutMe />
-      <Faq />
+
+      <main>
+        <Hero />
+        <Services />
+        <TechStack />
+        <Projects />
+        <Articles />
+        <AboutMe />
+        <Faq />
+      </main>
+
       <Footer />
     </div>
   );
