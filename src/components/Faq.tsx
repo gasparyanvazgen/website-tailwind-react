@@ -4,7 +4,7 @@ import React, { useCallback, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
 const faqItems = [
-  { question: "What technologies do you specialize in?", answer: "I mainly work with React, TypeScript, Node.js, and Tailwind CSS, with experience across SQL and NoSQL databases." },
+  { question: "What technologies do you specialize in?", answer: "I mainly work with React, TypeScript, Next.js, and Tailwind CSS, with experience across SQL and NoSQL databases." },
   { question: "Do you work with international clients?", answer: "Yes — I am comfortable working remotely, communicating asynchronously, and collaborating across time zones." },
   { question: "What's your typical project timeline?", answer: "It depends on scope, but most small-to-mid sized projects take around 2–6 weeks from kickoff to launch." },
   { question: "How do you handle project pricing?", answer: "I offer fixed-price quotes for well-defined projects and flexible pricing for ongoing or open-ended work." },

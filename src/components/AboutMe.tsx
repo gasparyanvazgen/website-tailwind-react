@@ -20,7 +20,7 @@ function AboutMe() {
           <div className="relative mx-auto w-full max-w-sm">
             <div className="absolute inset-4 rounded-[2rem] bg-accentBlue/20 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-secondary/10 bg-secondary/5 p-5">
-              <div className="overflow-hidden rounded-[1.5rem] bg-accentBlueLight px-8 pt-8"><img src={avatar} alt="Portrait of Vazgen" width={1256} height={1516} loading="lazy" className="w-full" /></div>
+              <div className="overflow-hidden rounded-[1.5rem]"><img src={avatar} alt="Portrait of Vazgen Gasparyan" width={1256} height={1516} loading="lazy" className="w-full" /></div>
             </div>
           </div>
           <div>
