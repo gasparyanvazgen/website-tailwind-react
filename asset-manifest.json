@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/website-tailwind-react/static/css/main.0c16f569.css",
-    "main.js": "/website-tailwind-react/static/js/main.b823fb30.js",
-    "static/js/714.d6b4a2ab.chunk.js": "/website-tailwind-react/static/js/714.d6b4a2ab.chunk.js",
+    "main.js": "/website-tailwind-react/static/js/main.39a817cd.js",
+    "static/js/714.f072d63f.chunk.js": "/website-tailwind-react/static/js/714.f072d63f.chunk.js",
     "static/js/319.0caf6970.chunk.js": "/website-tailwind-react/static/js/319.0caf6970.chunk.js",
     "static/js/909.01ebaa67.chunk.js": "/website-tailwind-react/static/js/909.01ebaa67.chunk.js",
     "static/js/9.221a6862.chunk.js": "/website-tailwind-react/static/js/9.221a6862.chunk.js",
@@ -18,8 +18,8 @@
     "static/media/linkedin-icon-2-logo-svgrepo-com.svg": "/website-tailwind-react/static/media/linkedin-icon-2-logo-svgrepo-com.9d6c57806071247c3fcb086b59fa3daa.svg",
     "static/media/gmail-svgrepo-com.svg": "/website-tailwind-react/static/media/gmail-svgrepo-com.87cc67187afd3477d6c29ef768e48834.svg",
     "main.0c16f569.css.map": "/website-tailwind-react/static/css/main.0c16f569.css.map",
-    "main.b823fb30.js.map": "/website-tailwind-react/static/js/main.b823fb30.js.map",
-    "714.d6b4a2ab.chunk.js.map": "/website-tailwind-react/static/js/714.d6b4a2ab.chunk.js.map",
+    "main.39a817cd.js.map": "/website-tailwind-react/static/js/main.39a817cd.js.map",
+    "714.f072d63f.chunk.js.map": "/website-tailwind-react/static/js/714.f072d63f.chunk.js.map",
     "319.0caf6970.chunk.js.map": "/website-tailwind-react/static/js/319.0caf6970.chunk.js.map",
     "909.01ebaa67.chunk.js.map": "/website-tailwind-react/static/js/909.01ebaa67.chunk.js.map",
     "9.221a6862.chunk.js.map": "/website-tailwind-react/static/js/9.221a6862.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.0c16f569.css",
-    "static/js/main.b823fb30.js"
+    "static/js/main.39a817cd.js"
   ]
 }
