@@ -76,7 +76,7 @@ function TechStack() {
 
               <p className="mt-5 font-medium">{name}</p>
 
-              <p className="mt-1 text-xs text-secondary/40">
+              <p className="mt-1 text-xs text-secondary/70">
                 Technology
               </p>
             </div>

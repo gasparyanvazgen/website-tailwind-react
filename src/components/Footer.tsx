@@ -26,7 +26,7 @@ function Footer() {
         <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div>
             <Link to="/" className="text-2xl font-semibold tracking-tight">Vazgen<span className="text-accentBlueLight">Dev.</span></Link>
-            <p className="mt-3 max-w-sm text-sm leading-6 text-secondary/45">Full-stack development for modern products, from the first idea to the final deployment.</p>
+            <p className="mt-3 max-w-sm text-sm leading-6 text-secondary/70">Full-stack development for modern products, from the first idea to the final deployment.</p>
           </div>
           <Link to="/contact" className="inline-flex w-fit items-center rounded-xl bg-accentBlue px-5 py-3 text-sm font-semibold transition hover:bg-accentBlueDark">Start a project</Link>
         </div>
@@ -45,7 +45,7 @@ function Footer() {
           </div>
           <div className="flex gap-3">{socialItems.map((item) => <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer" aria-label={item.name} className="flex size-10 items-center justify-center rounded-full border border-secondary/10 bg-secondary/5 p-2 transition hover:bg-accentBlue"><img src={item.icon} alt={item.name} width={24} height={24} className="w-full" /></a>)}</div>
         </div>
-        <p className="mt-8 text-xs text-secondary/30">© {new Date().getFullYear()} Vazgen Dev. All rights reserved.</p>
+        <p className="mt-8 text-xs text-secondary/70">© {new Date().getFullYear()} Vazgen Dev. All rights reserved.</p>
       </div>
     </footer>
   );

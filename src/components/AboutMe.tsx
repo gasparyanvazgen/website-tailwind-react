@@ -27,7 +27,7 @@ function AboutMe() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-accentBlueLight">About me</p>
             <h2 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">A developer who cares about both the product and the code.</h2>
             <p className="mt-6 max-w-2xl text-base leading-7 text-secondary/60 md:text-lg">I&apos;m a full-stack developer who enjoys turning ideas into fast, reliable products. I care about clean architecture, thoughtful UX, and shipping software that actually helps people.</p>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-secondary/50">My approach is simple: understand the problem, keep the solution focused, communicate clearly, and build something that is easy to improve later.</p>
+            <p className="mt-4 max-w-2xl text-base leading-7 text-secondary/70">My approach is simple: understand the problem, keep the solution focused, communicate clearly, and build something that is easy to improve later.</p>
           </div>
         </div>
 
@@ -35,11 +35,11 @@ function AboutMe() {
           <div className="grid gap-10 md:grid-cols-2 md:gap-16">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accentBlueLight">Experience</p>
-              <div className="mt-6 space-y-3">{experience.map((item) => <div key={item.title} className="rounded-2xl border border-secondary/10 bg-secondary/5 p-5"><p className="font-semibold">{item.title}</p><p className="mt-1 text-sm text-secondary/50">{item.place} · {item.period}</p></div>)}</div>
+              <div className="mt-6 space-y-3">{experience.map((item) => <div key={item.title} className="rounded-2xl border border-secondary/10 bg-secondary/5 p-5"><p className="font-semibold">{item.title}</p><p className="mt-1 text-sm text-secondary/70">{item.place} · {item.period}</p></div>)}</div>
             </div>
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accentBlueLight">Education</p>
-              <div className="mt-6 space-y-3">{education.map((item) => <div key={item.title} className="rounded-2xl border border-secondary/10 bg-secondary/5 p-5"><p className="font-semibold">{item.title}</p><p className="mt-1 text-sm text-secondary/50">{item.place} · {item.period}</p></div>)}</div>
+              <div className="mt-6 space-y-3">{education.map((item) => <div key={item.title} className="rounded-2xl border border-secondary/10 bg-secondary/5 p-5"><p className="font-semibold">{item.title}</p><p className="mt-1 text-sm text-secondary/70">{item.place} · {item.period}</p></div>)}</div>
             </div>
           </div>
         </div>
