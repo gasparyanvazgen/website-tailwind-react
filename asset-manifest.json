@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/website-tailwind-react/static/css/main.0c16f569.css",
-    "main.js": "/website-tailwind-react/static/js/main.854c2a0d.js",
+    "main.js": "/website-tailwind-react/static/js/main.37cfe88e.js",
     "static/js/714.987062a7.chunk.js": "/website-tailwind-react/static/js/714.987062a7.chunk.js",
     "static/js/319.0caf6970.chunk.js": "/website-tailwind-react/static/js/319.0caf6970.chunk.js",
     "static/js/909.01ebaa67.chunk.js": "/website-tailwind-react/static/js/909.01ebaa67.chunk.js",
     "static/js/9.221a6862.chunk.js": "/website-tailwind-react/static/js/9.221a6862.chunk.js",
-    "static/js/555.2e77216e.chunk.js": "/website-tailwind-react/static/js/555.2e77216e.chunk.js",
+    "static/js/555.3eca1ebd.chunk.js": "/website-tailwind-react/static/js/555.3eca1ebd.chunk.js",
     "static/js/332.a1ae9715.chunk.js": "/website-tailwind-react/static/js/332.a1ae9715.chunk.js",
     "static/js/856.c93e9237.chunk.js": "/website-tailwind-react/static/js/856.c93e9237.chunk.js",
     "static/js/569.0be5af95.chunk.js": "/website-tailwind-react/static/js/569.0be5af95.chunk.js",
@@ -18,12 +18,12 @@
     "static/media/linkedin-icon-2-logo-svgrepo-com.svg": "/website-tailwind-react/static/media/linkedin-icon-2-logo-svgrepo-com.9d6c57806071247c3fcb086b59fa3daa.svg",
     "static/media/gmail-svgrepo-com.svg": "/website-tailwind-react/static/media/gmail-svgrepo-com.87cc67187afd3477d6c29ef768e48834.svg",
     "main.0c16f569.css.map": "/website-tailwind-react/static/css/main.0c16f569.css.map",
-    "main.854c2a0d.js.map": "/website-tailwind-react/static/js/main.854c2a0d.js.map",
+    "main.37cfe88e.js.map": "/website-tailwind-react/static/js/main.37cfe88e.js.map",
     "714.987062a7.chunk.js.map": "/website-tailwind-react/static/js/714.987062a7.chunk.js.map",
     "319.0caf6970.chunk.js.map": "/website-tailwind-react/static/js/319.0caf6970.chunk.js.map",
     "909.01ebaa67.chunk.js.map": "/website-tailwind-react/static/js/909.01ebaa67.chunk.js.map",
     "9.221a6862.chunk.js.map": "/website-tailwind-react/static/js/9.221a6862.chunk.js.map",
-    "555.2e77216e.chunk.js.map": "/website-tailwind-react/static/js/555.2e77216e.chunk.js.map",
+    "555.3eca1ebd.chunk.js.map": "/website-tailwind-react/static/js/555.3eca1ebd.chunk.js.map",
     "332.a1ae9715.chunk.js.map": "/website-tailwind-react/static/js/332.a1ae9715.chunk.js.map",
     "856.c93e9237.chunk.js.map": "/website-tailwind-react/static/js/856.c93e9237.chunk.js.map",
     "569.0be5af95.chunk.js.map": "/website-tailwind-react/static/js/569.0be5af95.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.0c16f569.css",
-    "static/js/main.854c2a0d.js"
+    "static/js/main.37cfe88e.js"
   ]
 }
