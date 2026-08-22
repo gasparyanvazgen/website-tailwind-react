@@ -50,7 +50,7 @@ function Seo({
     document.title = title;
     upsertMeta("name", "description", description);
     upsertMeta("name", "robots", noIndex ? "noindex,nofollow" : "index,follow,max-image-preview:large");
-    upsertMeta("name", "author", "Vazgen Gasparian");
+    upsertMeta("name", "author", "Vazgen Gasparyan");
     upsertMeta("name", "theme-color", "#111827");
 
     upsertMeta("property", "og:title", title);
@@ -70,7 +70,7 @@ function Seo({
 
     upsertLink("canonical", canonicalUrl);
 
-    // Replace only this page's JSON-LD block so client-side navigation never leaves stale schema behind.
+    // replace only this page's JSON-LD block so client-side navigation never leaves stale schema behind.
     const schemaId = "vazgendev-structured-data";
     document.getElementById(schemaId)?.remove();
     if (!structuredData) return;

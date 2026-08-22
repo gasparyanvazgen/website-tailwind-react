@@ -15,7 +15,7 @@ function Hero() {
         <div>
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-secondary/10 bg-secondary/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-secondary/70">
             <span className="h-2 w-2 rounded-full bg-green-400" />
-            Available for freelance work
+            Available for freelance & remote part-time work
           </div>
 
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-accentBlueLight">Full-stack developer</p>
