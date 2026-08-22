@@ -29,14 +29,13 @@ function Articles() {
               <h3 className="mt-2 text-xl font-semibold tracking-tight">{article.title}</h3>
               <p className="mt-3 text-sm leading-6 text-secondary/55">{article.intro}</p>
               <div className="mt-5 flex flex-wrap gap-2">{article.tags.map((tag) => <span key={tag} className="rounded-full border border-secondary/10 bg-secondary/5 px-3 py-1 text-xs text-secondary/65">{tag}</span>)}</div>
-              <Link
-                to={`/articles/${article.slug}`}
-                aria-label={`Read ${article.title}`}
-                className="group/btn mt-6 inline-flex items-center font-semibold text-accentBlueLight"
-              >
-                Read More
-                <ArrowLongRightIcon className="ml-2 h-5 w-5 transition group-hover/btn:translate-x-1" />
-              </Link>
+                <Link
+                  to={`/articles/${article.slug}`}
+                  className="group/btn mt-6 inline-flex items-center font-semibold text-accentBlueLight"
+                >
+                  Read More <span className="sr-only">about {article.title}</span>
+                  <ArrowLongRightIcon className="ml-2 h-5 w-5 transition group-hover/btn:translate-x-1" />
+                </Link>
             </article>
           ))}
         </div>
