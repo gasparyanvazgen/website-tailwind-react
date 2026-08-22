@@ -1,5 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow: /website-tailwind-react/admin
+Disallow: /admin
 
-Sitemap: https://gasparyanvazgen.github.io/website-tailwind-react/sitemap.xml
+Sitemap: https://gasparyanvazgen.github.io/sitemap.xml

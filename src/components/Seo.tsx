@@ -11,7 +11,7 @@ interface SeoProps {
   structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
-export const SITE_URL = "https://gasparyanvazgen.github.io/website-tailwind-react";
+export const SITE_URL = "https://gasparyanvazgen.github.io/";
 export const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
 function upsertMeta(attribute: "name" | "property", key: string, content: string) {

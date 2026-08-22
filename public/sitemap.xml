@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/projects</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/articles</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/contact</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/projects/e-commerce-platform</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/projects/task-management-app</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/projects/portfolio-site-builder</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/articles/building-apis-that-scale</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/articles/mastering-tailwind-css</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/website-tailwind-react/articles/typescript-best-practices</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/projects</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/articles</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/contact</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/projects/e-commerce-platform</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/projects/task-management-app</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/projects/portfolio-site-builder</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/articles/building-apis-that-scale</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/articles/mastering-tailwind-css</loc></url>
+  <url><loc>https://gasparyanvazgen.github.io/articles/typescript-best-practices</loc></url>
 </urlset>

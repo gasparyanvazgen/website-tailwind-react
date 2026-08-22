@@ -26,7 +26,7 @@
     "build:project": "cross-env PUBLIC_URL=/website-tailwind-react react-scripts build",
     "deploy:personal": "gh-pages -d build -r git@github.com:gasparyanvazgen/gasparyanvazgen.github.io.git",
     "deploy:project": "gh-pages -d build -r git@github.com:gasparyanvazgen/website-tailwind-react.git",
-    "deploy:both": "npm run build:personal && npm run deploy:personal && npm run build:project && npm run deploy:project"
+    "deploy:both": "npm run build:project && npm run deploy:project && npm run build:personal && npm run deploy:personal"
   },
   "eslintConfig": {
     "extends": [

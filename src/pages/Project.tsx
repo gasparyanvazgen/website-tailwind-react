@@ -26,9 +26,9 @@ function Project() {
           author: {
             "@type": "Person",
             name: "Vazgen Gasparian",
-            url: "https://gasparyanvazgen.github.io/website-tailwind-react/",
+            url: "https://gasparyanvazgen.github.io/",
           },
-          url: `https://gasparyanvazgen.github.io/website-tailwind-react/projects/${project.slug}`,
+          url: `https://gasparyanvazgen.github.io/projects/${project.slug}`,
           keywords: project.tags.join(", "),
         }}
       />

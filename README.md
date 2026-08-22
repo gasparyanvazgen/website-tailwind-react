@@ -73,7 +73,7 @@ The generated production files are placed in `build/`.
 The project is configured with:
 
 ```json
-"homepage": "https://gasparyanvazgen.github.io/website-tailwind-react/"
+"homepage": "https://gasparyanvazgen.github.io/"
 ```
 
 Deploy with:

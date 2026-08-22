@@ -35,7 +35,7 @@ function Article() {
           author: {
             "@type": "Person",
             name: "Vazgen Gasparian",
-            url: "https://gasparyanvazgen.github.io/website-tailwind-react/",
+            url: "https://gasparyanvazgen.github.io/",
           },
           publisher: {
             "@type": "Person",
@@ -43,7 +43,7 @@ function Article() {
           },
           mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": `https://gasparyanvazgen.github.io/website-tailwind-react/articles/${article.slug}`,
+            "@id": `https://gasparyanvazgen.github.io/articles/${article.slug}`,
           },
         }}
       />

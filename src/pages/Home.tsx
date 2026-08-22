@@ -47,7 +47,7 @@ function Home() {
             "@context": "https://schema.org",
             "@type": "Person",
             name: "Vazgen Gasparian",
-            url: "https://gasparyanvazgen.github.io/website-tailwind-react/",
+            url: "https://gasparyanvazgen.github.io/",
             jobTitle: "Software Developer & Freelance Engineer",
             sameAs: [
               "https://github.com/gasparyanvazgen",
@@ -58,7 +58,7 @@ function Home() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "VazgenDev",
-            url: "https://gasparyanvazgen.github.io/website-tailwind-react/",
+            url: "https://gasparyanvazgen.github.io/",
             description: "Software developer portfolio for Vazgen Gasparian.",
           },
         ]}
@@ -70,8 +70,8 @@ function Home() {
         <Hero />
         <Services />
         <TechStack />
-        <Projects />
-        <Articles />
+        {/* <Projects />
+        <Articles /> */}
         <AboutMe />
         <Faq />
       </main>
