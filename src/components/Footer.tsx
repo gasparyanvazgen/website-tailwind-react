@@ -43,7 +43,7 @@ function Footer() {
               </Link>
             ))}
           </div>
-          <div className="flex gap-3">{socialItems.map((item) => <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer" aria-label={item.name} className="flex size-10 items-center justify-center rounded-full border border-secondary/10 bg-secondary/5 p-2 transition hover:bg-accentBlue"><img src={item.icon} alt={item.name} className="w-full" /></a>)}</div>
+          <div className="flex gap-3">{socialItems.map((item) => <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer" aria-label={item.name} className="flex size-10 items-center justify-center rounded-full border border-secondary/10 bg-secondary/5 p-2 transition hover:bg-accentBlue"><img src={item.icon} alt={item.name} width={24} height={24} className="w-full" /></a>)}</div>
         </div>
         <p className="mt-8 text-xs text-secondary/30">© {new Date().getFullYear()} Vazgen Dev. All rights reserved.</p>
       </div>
