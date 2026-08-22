@@ -56,7 +56,7 @@ function Hero() {
               <span>01 / Developer</span>
             </div>
             <div className="overflow-hidden rounded-[1.5rem]">
-              <img src={avatar} alt="Portrait of Vazgen Gasparyan" width={1256} height={1516} loading="eager" className="w-full transition duration-700 hover:scale-[1.03]" />
+              <img src={avatar} alt="Portrait of Vazgen Gasparyan" width={1127} height={1127} loading="eager" fetchPriority="high" decoding="async" className="w-full transition duration-700 hover:scale-[1.03]" />
             </div>
             <div className="mt-4 grid grid-cols-2 gap-3">
               <div className="rounded-xl border border-secondary/10 bg-secondary/5 p-4">
