@@ -26,7 +26,7 @@ const defaultSettings: SiteSettings = {
   email: "infogasparian@gmail.com",
   github: "https://github.com/gasparyanvazgen",
   linkedin: "https://linkedin.com/in/vazgen-gasparyan",
-  availability: "Available for freelance work",
+  availability: "Available for freelance & remote work",
 };
 
 function Admin() {
