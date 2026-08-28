@@ -1,7 +1,8 @@
-// freelance inquiry page: presents the offer and opens a pre-filled email for a backend-free contact flow.
+// freelance inquiry page: sends project inquiries through Formspree.
 
-import React, { FormEvent, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { useForm, ValidationError } from "@formspree/react";
 import Seo from "../components/Seo";
 import {
   ArrowLongLeftIcon,
@@ -20,21 +21,7 @@ const services = [
 ];
 
 function Contact() {
-  // use the user's mail client as a zero-backend fallback so the public form does not pretend to send data to a server.
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const name = String(form.get("name") || "");
-    const email = String(form.get("email") || "");
-    const message = String(form.get("message") || "");
-    const subject = encodeURIComponent(`Project inquiry from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nProject details:\n${message}`);
-
-    window.location.href = `mailto:infogasparian@gmail.com?subject=${subject}&body=${body}`;
-    setSubmitted(true);
-  };
+  const [state, handleSubmit, reset] = useForm("xppzzaanlk");
 
   return (
     <main className="min-h-screen bg-secondary text-primary">
@@ -43,6 +30,7 @@ function Contact() {
         description="Get in touch with VazgenDev about web applications, full-stack development, APIs, backend systems, and product improvements."
         path="/contact"
       />
+
       <header className="border-b border-gray-200/80 bg-secondary/95 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-5 py-5">
           <Link
@@ -54,6 +42,7 @@ function Contact() {
               Dev.
             </span>
           </Link>
+
           <Link
             to="/"
             className="group inline-flex items-center gap-2 text-sm font-medium text-secondaryDark transition hover:text-primary"
@@ -80,29 +69,40 @@ function Contact() {
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-accentBlueLight">
                   Start a project
                 </p>
+
                 <h1 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
                   Let&apos;s build something worth
-                  <span className="block text-accentBlueLight">shipping.</span>
+                  <span className="block text-accentBlueLight">
+                    shipping.
+                  </span>
                 </h1>
+
                 <p className="mt-6 max-w-2xl text-base leading-7 text-secondary/70 md:text-lg">
-                  Tell me what you&apos;re building, where you&apos;re stuck, or what
-                  you want to improve. I&apos;ll turn the idea into a clear technical
-                  plan and a polished product.
+                  Tell me what you&apos;re building, where you&apos;re stuck, or
+                  what you want to improve. I&apos;ll turn the idea into a
+                  clear technical plan and a polished product.
                 </p>
 
                 <div className="mt-10 grid gap-4 sm:grid-cols-2">
                   <div className="rounded-2xl border border-secondary/10 bg-secondary/5 p-5">
                     <ClockIcon className="h-6 w-6 text-accentBlueLight" />
-                    <p className="mt-4 text-sm font-semibold">Fast communication</p>
+                    <p className="mt-4 text-sm font-semibold">
+                      Fast communication
+                    </p>
                     <p className="mt-1 text-sm leading-6 text-secondary/60">
-                      Clear updates, practical decisions, no unnecessary meetings.
+                      Clear updates, practical decisions, no unnecessary
+                      meetings.
                     </p>
                   </div>
+
                   <div className="rounded-2xl border border-secondary/10 bg-secondary/5 p-5">
                     <CheckCircleIcon className="h-6 w-6 text-accentBlueLight" />
-                    <p className="mt-4 text-sm font-semibold">Built to ship</p>
+                    <p className="mt-4 text-sm font-semibold">
+                      Built to ship
+                    </p>
                     <p className="mt-1 text-sm leading-6 text-secondary/60">
-                      Clean, maintainable work focused on real business outcomes.
+                      Clean, maintainable work focused on real business
+                      outcomes.
                     </p>
                   </div>
                 </div>
@@ -114,33 +114,45 @@ function Contact() {
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accentBlue">
                   Your project
                 </p>
+
                 <h2 className="mt-2 text-2xl font-semibold tracking-tight">
                   Start the conversation
                 </h2>
+
                 <p className="mt-2 text-sm leading-6 text-secondaryDark">
                   A few details are enough. I&apos;ll take it from there.
                 </p>
 
-                {submitted ? (
+                {state.succeeded ? (
                   <div className="mt-8 rounded-2xl border border-green-200 bg-green-50 p-5">
                     <CheckCircleIcon className="h-7 w-7 text-green-600" />
-                    <p className="mt-3 font-semibold text-green-900">Message ready</p>
-                    <p className="mt-1 text-sm leading-6 text-green-800/80">
-                      Thanks for reaching out. Your email app should open with the project details pre-filled. If it doesn&apos;t, email me directly at infogasparian@gmail.com.
+
+                    <p className="mt-3 font-semibold text-green-900">
+                      Message sent successfully!
                     </p>
+
+                    <p className="mt-1 text-sm leading-6 text-green-800/80">
+                      Thanks for reaching out. I&apos;ve received your project
+                      inquiry and will get back to you as soon as possible.
+                    </p>
+
                     <button
                       type="button"
-                      onClick={() => setSubmitted(false)}
+                      onClick={reset}
                       className="mt-4 text-sm font-semibold text-green-800 underline underline-offset-4"
                     >
                       Send another inquiry
                     </button>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="mt-7 space-y-5">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="mt-7 space-y-5"
+                  >
                     <div className="grid gap-5 sm:grid-cols-2">
                       <label className="flex flex-col gap-2 text-sm font-semibold">
                         Name
+
                         <input
                           name="name"
                           type="text"
@@ -148,9 +160,18 @@ function Contact() {
                           placeholder="Your name"
                           className="rounded-xl border border-gray-200 bg-white px-4 py-3.5 font-normal outline-none transition placeholder:text-gray-400 focus:border-accentBlue focus:ring-4 focus:ring-accentBlueLight/60"
                         />
+
+                        <ValidationError
+                          prefix="Name"
+                          field="name"
+                          errors={state.errors}
+                          className="text-xs font-normal text-red-600"
+                        />
                       </label>
+
                       <label className="flex flex-col gap-2 text-sm font-semibold">
                         Email
+
                         <input
                           name="email"
                           type="email"
@@ -158,11 +179,19 @@ function Contact() {
                           placeholder="you@example.com"
                           className="rounded-xl border border-gray-200 bg-white px-4 py-3.5 font-normal outline-none transition placeholder:text-gray-400 focus:border-accentBlue focus:ring-4 focus:ring-accentBlueLight/60"
                         />
+
+                        <ValidationError
+                          prefix="Email"
+                          field="email"
+                          errors={state.errors}
+                          className="text-xs font-normal text-red-600"
+                        />
                       </label>
                     </div>
 
                     <label className="flex flex-col gap-2 text-sm font-semibold">
                       What can I help with?
+
                       <textarea
                         name="message"
                         rows={6}
@@ -170,17 +199,51 @@ function Contact() {
                         placeholder="Tell me about your project, goals, timeline, or the problem you want to solve..."
                         className="resize-none rounded-xl border border-gray-200 bg-white px-4 py-3.5 font-normal leading-6 outline-none transition placeholder:text-gray-400 focus:border-accentBlue focus:ring-4 focus:ring-accentBlueLight/60"
                       />
+
+                      <ValidationError
+                        prefix="Message"
+                        field="message"
+                        errors={state.errors}
+                        className="text-xs font-normal text-red-600"
+                      />
                     </label>
+
+                    {state.errors &&
+                      state.errors.getFormErrors().length > 0 && (
+                        <p className="text-sm leading-6 text-red-700">
+                          Something went wrong while sending your message. Please try again or
+                          email me directly at{" "}
+                          <a
+                            href="mailto:infogasparian@gmail.com"
+                            className="font-semibold underline underline-offset-2 hover:text-red-900"
+                          >
+                            infogasparian@gmail.com
+                          </a>
+                          .
+                        </p>
+                      )}
 
                     <button
                       type="submit"
-                      className="group flex w-full items-center justify-center rounded-xl bg-accentBlue px-6 py-3.5 font-semibold text-secondary transition hover:bg-accentBlueDark hover:shadow-lg hover:shadow-accentBlue/20"
+                      disabled={state.submitting}
+                      className="group flex w-full items-center justify-center rounded-xl bg-accentBlue px-6 py-3.5 font-semibold text-secondary transition hover:bg-accentBlueDark hover:shadow-lg hover:shadow-accentBlue/20 disabled:cursor-not-allowed disabled:opacity-60"
                     >
-                      Send project inquiry
-                      <ArrowLongRightIcon className="ml-2 h-5 w-5 transition group-hover:translate-x-1" />
+                      {state.submitting ? (
+                        <>
+                          Sending...
+                          <span className="ml-2 h-5 w-5 animate-spin rounded-full border-2 border-secondary/30 border-t-secondary" />
+                        </>
+                      ) : (
+                        <>
+                          Send project inquiry
+                          <ArrowLongRightIcon className="ml-2 h-5 w-5 transition group-hover:translate-x-1" />
+                        </>
+                      )}
                     </button>
+
                     <p className="text-center text-xs leading-5 text-secondaryDark">
-                      No commitment. Just a focused conversation about your project.
+                      No commitment. Just a focused conversation about your
+                      project.
                     </p>
                   </form>
                 )}
@@ -197,6 +260,7 @@ function Contact() {
             </p>
             <p className="mt-1 font-medium">infogasparian@gmail.com</p>
           </div>
+
           <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
             <MapPinIcon className="h-6 w-6 text-accentBlue" />
             <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-secondaryDark">
@@ -204,6 +268,7 @@ function Contact() {
             </p>
             <p className="mt-1 font-medium">Remote · Worldwide</p>
           </div>
+
           <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
             <CheckCircleIcon className="h-6 w-6 text-accentBlue" />
             <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-secondaryDark">
@@ -219,10 +284,12 @@ function Contact() {
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-accentBlue">
                 What I can help with
               </p>
+
               <h2 className="mt-2 text-2xl font-semibold tracking-tight md:text-3xl">
                 From idea to reliable product.
               </h2>
             </div>
+
             <div className="grid gap-3 sm:grid-cols-2">
               {services.map((service) => (
                 <div
@@ -232,6 +299,7 @@ function Contact() {
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-accentBlueLight text-accentBlue">
                     <CheckCircleIcon className="h-4 w-4" />
                   </span>
+
                   {service}
                 </div>
               ))}
