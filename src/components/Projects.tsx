@@ -38,7 +38,7 @@ function Projects() {
         </div>
 
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
-          {projectItems.map((project) => (
+          {projectItems.slice(-3).reverse().map((project) => (
             <ProjectCard project={project} />
           ))}
         </div>
