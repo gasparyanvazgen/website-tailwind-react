@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const menuItems = [
   { name: "About", link: { pathname: "/", hash: "#about" } },
   { name: "Services", link: { pathname: "/", hash: "#services" } },
-  // { name: "Projects", link: { pathname: "/", hash: "#projects" } },
+  { name: "Projects", link: { pathname: "/", hash: "#projects" } },
   // { name: "Articles", link: { pathname: "/", hash: "#articles" } },
 ];
 

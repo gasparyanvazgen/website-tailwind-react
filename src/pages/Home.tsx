@@ -70,8 +70,8 @@ function Home() {
         <Hero />
         <Services />
         <TechStack />
-        {/* <Projects />
-        <Articles /> */}
+        <Projects />
+        {/* <Articles /> */}
         <AboutMe />
         <Faq />
       </main>

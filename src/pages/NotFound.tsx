@@ -27,13 +27,13 @@ function NotFound() {
             <HomeIcon className="mr-2 h-5 w-5" />
             Back to home
           </Link>
-          {/* <Link
+          <Link
             to="/projects"
             className="group inline-flex items-center rounded-full border border-secondary/15 bg-secondary/5 px-6 py-3.5 font-semibold text-secondary transition hover:bg-secondary/10"
           >
             View projects
             <ArrowLongLeftIcon className="ml-2 h-5 w-5 rotate-180 transition group-hover:translate-x-1" />
-          </Link> */}
+          </Link>
         </div>
       </section>
     </main>

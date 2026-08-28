@@ -45,12 +45,12 @@ function Hero() {
               Start a project
               <ArrowLongRightIcon className="ml-2 h-5 w-5 transition group-hover:translate-x-1" />
             </Link>
-            {/* <a
+            <a
               href="#projects"
               className="inline-flex items-center justify-center rounded-xl border border-secondary/15 bg-secondary/5 px-6 py-3.5 font-semibold text-secondary transition hover:bg-secondary/10"
             >
               View selected work
-            </a> */}
+            </a>
           </div>
 
           <div className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm text-secondary/60">
