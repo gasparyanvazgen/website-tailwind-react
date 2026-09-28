@@ -69,7 +69,7 @@ function Hero() {
           <div className="absolute inset-5 rounded-[2rem] bg-accentBlue/20 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-secondary/10 bg-secondary/5 p-5 shadow-2xl">
             <div className="mb-4 flex items-center justify-between text-xs text-secondary/50">
-              <span>VazgenDev.</span>
+              <span>Vazgen Gasparyan</span>
               <span>01 / Developer</span>
             </div>
             <div className="overflow-hidden rounded-[1.5rem]">

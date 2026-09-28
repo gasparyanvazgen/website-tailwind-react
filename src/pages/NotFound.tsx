@@ -8,8 +8,8 @@ function NotFound() {
   return (
     <main className="grid min-h-screen place-items-center bg-primary px-5 text-secondary">
       <Seo
-        title="Page Not Found | VazgenDev"
-        description="The page you are looking for could not be found. Return to the VazgenDev portfolio."
+        title="Page Not Found | Vazgen Gasparyan"
+        description="The page you are looking for could not be found. Return to the Vazgen Gasparyan's portfolio."
         path="/404"
         noIndex
       />

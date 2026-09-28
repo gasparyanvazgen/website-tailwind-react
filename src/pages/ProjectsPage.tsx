@@ -19,8 +19,8 @@ function ProjectsPage() {
 
       <main id="main-content">
         <Seo
-          title="Projects | VazgenDev"
-          description="Explore selected VazgenDev software projects, case studies, full-stack applications, backend systems, and product concepts."
+          title="Projects | Vazgen Gasparyan"
+          description="Explore selected Vazgen Gasparyan's software projects, case studies, full-stack applications, backend systems, and product concepts."
           path="/projects"
         />
 

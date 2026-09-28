@@ -26,8 +26,8 @@ function Contact() {
   return (
     <main className="min-h-screen bg-secondary text-primary">
       <Seo
-        title="Contact VazgenDev — Start a Project"
-        description="Get in touch with VazgenDev about web applications, full-stack development, APIs, backend systems, and product improvements."
+        title="Contact Vazgen Gasparyan — Start a Project"
+        description="Get in touch with Vazgen Gasparyan about web applications, full-stack development, APIs, backend systems, and product improvements."
         path="/contact"
       />
 

@@ -64,7 +64,7 @@ function Admin() {
 
   return (
     <main className="min-h-screen bg-secondary text-primary">
-      <Seo title="Admin | VazgenDev" description="Private portfolio administration page." path="/admin" noIndex />
+      <Seo title="Admin | Vazgen Gasparyan" description="Private portfolio administration page." path="/admin" noIndex />
       <header className="sticky top-0 z-40 border-b border-gray-200/80 bg-secondary/95 backdrop-blur">
         <div className="container mx-auto flex items-center justify-between px-5 py-5">
           <Link to="/" className="text-xl font-semibold tracking-tight">
@@ -96,7 +96,7 @@ function Admin() {
             Control center
           </p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
-            Manage your VazgenDev presence.
+            Manage your website's presence.
           </h1>
           <p className="mt-4 max-w-2xl leading-7 text-secondaryDark">
             A lightweight front-end dashboard for your portfolio settings, links,

@@ -13,7 +13,7 @@ function Article() {
   if (!article) {
     return (
       <main className="grid min-h-screen place-items-center bg-secondary px-5 text-primary">
-        <Seo title="Article Not Found | VazgenDev" description="The requested article could not be found." path={`/articles/${slug || "unknown"}`} noIndex />
+        <Seo title="Article Not Found | Vazgen Gasparyan" description="The requested article could not be found." path={`/articles/${slug || "unknown"}`} noIndex />
         <div className="text-center"><p className="text-sm font-semibold uppercase tracking-[0.2em] text-accentBlue">404</p><h1 className="mt-3 text-4xl font-semibold">Article not found</h1><Link to="/articles" className="mt-7 inline-flex rounded-full bg-primary px-5 py-3 font-semibold text-secondary">View all articles</Link></div>
       </main>
     );
@@ -22,7 +22,7 @@ function Article() {
   return (
     <main className="min-h-screen bg-secondary text-primary">
       <Seo
-        title={`${article.title} | VazgenDev`}
+        title={`${article.title} | Vazgen Gasparyan`}
         description={article.intro}
         path={`/articles/${article.slug}`}
         type="article"
@@ -34,12 +34,12 @@ function Article() {
           datePublished: article.published,
           author: {
             "@type": "Person",
-            name: "Vazgen Gasparian",
+            name: "Vazgen Gasparyan",
             url: "https://gasparyanvazgen.github.io/",
           },
           publisher: {
             "@type": "Person",
-            name: "Vazgen Gasparian",
+            name: "Vazgen Gasparyan",
           },
           mainEntityOfPage: {
             "@type": "WebPage",

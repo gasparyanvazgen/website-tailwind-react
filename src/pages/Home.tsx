@@ -39,14 +39,14 @@ function Home() {
   return (
     <div id="main-content" className="bg-primary text-primary">
       <Seo
-        title="VazgenDev — Software Developer & Freelance Engineer"
-        description="VazgenDev is the portfolio of Vazgen Gasparian, a software developer focused on full-stack development, backend systems, APIs, databases, and modern web experiences."
+        title="Vazgen Gasparyan — Software Developer & Freelance Engineer"
+        description="The websites is the portfolio of Vazgen Gasparyan, a software developer focused on full-stack development, backend systems, APIs, databases, and modern web experiences."
         path="/"
         structuredData={[
           {
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "Vazgen Gasparian",
+            name: "Vazgen Gasparyan",
             url: "https://gasparyanvazgen.github.io/",
             jobTitle: "Software Developer & Freelance Engineer",
             sameAs: [
@@ -57,9 +57,9 @@ function Home() {
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "VazgenDev",
+            name: "Vazgen Gasparyan",
             url: "https://gasparyanvazgen.github.io/",
-            description: "Software developer portfolio for Vazgen Gasparian.",
+            description: "Software developer portfolio for Vazgen Gasparyan.",
           },
         ]}
       />

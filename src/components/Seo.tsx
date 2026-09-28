@@ -58,15 +58,15 @@ function Seo({
     upsertMeta("property", "og:type", type);
     upsertMeta("property", "og:url", canonicalUrl);
     upsertMeta("property", "og:image", image);
-    upsertMeta("property", "og:image:alt", `${title} — VazgenDev`);
-    upsertMeta("property", "og:site_name", "VazgenDev");
+    upsertMeta("property", "og:image:alt", `${title} — Vazgen Gasparyan`);
+    upsertMeta("property", "og:site_name", "Vazgen Gasparyan");
     upsertMeta("property", "og:locale", "en_US");
 
     upsertMeta("name", "twitter:card", "summary_large_image");
     upsertMeta("name", "twitter:title", title);
     upsertMeta("name", "twitter:description", description);
     upsertMeta("name", "twitter:image", image);
-    upsertMeta("name", "twitter:image:alt", `${title} — VazgenDev`);
+    upsertMeta("name", "twitter:image:alt", `${title} — Vazgen Gasparyan`);
 
     upsertLink("canonical", canonicalUrl);
 

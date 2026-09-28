@@ -142,4 +142,4 @@ For a server-backed form later, connect the UI to a service such as Formspree or
 
 ## License
 
-Personal portfolio project. Content, branding, and personal assets belong to Vazgen Gasparian. Reuse of the personal content or branding requires permission.
+Personal portfolio project. Content, branding, and personal assets belong to Vazgen Gasparyan. Reuse of the personal content or branding requires permission.

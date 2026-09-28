@@ -12,7 +12,7 @@ function ArticlesPage() {
     <div className="min-h-screen bg-primary text-secondary">
       <NavBar />
       <main id="main-content">
-        <Seo title="Articles | VazgenDev" description="Technical notes, practical lessons, and ideas from VazgenDev about software development, backend engineering, React, TypeScript, and UI." path="/articles" />
+        <Seo title="Articles | Vazgen Gasparyan" description="Technical notes, practical lessons, and ideas from Vazgen Gasparyan about software development, backend engineering, React, TypeScript, and UI." path="/articles" />
         <section className="border-b border-secondary/10">
           <div className="container mx-auto px-5 py-20 md:py-28">
             <Link to="/#articles" className="group inline-flex items-center gap-2 text-sm text-secondary/55 hover:text-secondary">

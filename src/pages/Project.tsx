@@ -29,7 +29,7 @@ function Project() {
 
         <main className="grid min-h-[calc(100vh-80px)] place-items-center px-5">
           <Seo
-            title="Project Not Found | VazgenDev"
+            title="Project Not Found | Vazgen Gasparyan"
             description="The requested project could not be found."
             path={`/projects/${slug || "unknown"}`}
             noIndex
@@ -69,7 +69,7 @@ function Project() {
 
       <main id="main-content">
         <Seo
-          title={`${project.title} | VazgenDev`}
+          title={`${project.title} | Vazgen Gasparyan`}
           description={project.intro}
           path={`/projects/${project.slug}`}
           structuredData={{
@@ -79,7 +79,7 @@ function Project() {
             description: project.intro,
             author: {
               "@type": "Person",
-              name: "Vazgen Gasparian",
+              name: "Vazgen Gasparyan",
               url: "https://gasparyanvazgen.github.io/",
             },
             url: `https://gasparyanvazgen.github.io/projects/${project.slug}`,
