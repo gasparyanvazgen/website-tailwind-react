@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Admin = lazy(() => import("./pages/Admin"));
-const Article = lazy(() => import("./pages/Article"));
-const ArticlesPage = lazy(() => import("./pages/ArticlesPage"));
+// const Admin = lazy(() => import("./pages/Admin"));
+// const Article = lazy(() => import("./pages/Article"));
+// const ArticlesPage = lazy(() => import("./pages/ArticlesPage"));
 const Project = lazy(() => import("./pages/Project"));
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));

@@ -8,7 +8,7 @@ import Hero from "../components/Hero";
 import Services from "../components/Services";
 import TechStack from "../components/TechStack";
 import Projects from "../components/Projects";
-import Articles from "../components/Articles";
+// import Articles from "../components/Articles";
 import AboutMe from "../components/AboutMe";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
