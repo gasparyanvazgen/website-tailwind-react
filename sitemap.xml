@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gasparyanvazgen.github.io/</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/projects</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/articles</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/contact</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/projects/e-commerce-platform</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/projects/task-management-app</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/projects/portfolio-site-builder</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/articles/building-apis-that-scale</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/articles/mastering-tailwind-css</loc></url>
-  <url><loc>https://gasparyanvazgen.github.io/articles/typescript-best-practices</loc></url>
+  <!-- core Static Pages -->
+  <url>
+    <loc>https://gasparyanvazgen.github.io/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://gasparyanvazgen.github.io/projects</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gasparyanvazgen.github.io/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- projects -->
+  <url>
+    <loc>https://gasparyanvazgen.github.io/projects/tally</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
