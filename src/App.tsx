@@ -1,20 +1,14 @@
-// central route map with route-level code splitting so visitors download only the page they open.
+// central route map - temporary under development mode
+
 import React, { Suspense, lazy } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 const Home = lazy(() => import("./pages/Home"));
-const Contact = lazy(() => import("./pages/Contact"));
-// const Admin = lazy(() => import("./pages/Admin"));
-// const Article = lazy(() => import("./pages/Article"));
-// const ArticlesPage = lazy(() => import("./pages/ArticlesPage"));
-const Project = lazy(() => import("./pages/Project"));
-const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
-const NotFound = lazy(() => import("./pages/NotFound"));
 
 function RouteFallback() {
   return (
-    <div className="grid min-h-screen place-items-center bg-primary text-secondary">
-      <p className="text-sm font-medium text-secondary/60">Loading page…</p>
+    <div className="grid min-h-screen place-items-center bg-primary text-white">
+      <p className="text-sm font-medium text-neutral-400">Loading…</p>
     </div>
   );
 }
@@ -25,13 +19,9 @@ function App() {
       <Suspense fallback={<RouteFallback />}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/admin" element={<Admin />} /> */}
-          {/* <Route path="/articles" element={<ArticlesPage />} />
-          <Route path="/articles/:slug" element={<Article />} /> */}
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:slug" element={<Project />} />
-          <Route path="*" element={<NotFound />} />
+          
+          {/* Redirect any other path (e.g., /contact, /projects) straight to Home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
