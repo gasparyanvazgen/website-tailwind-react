@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/website-tailwind-react/static/css/main.cd3bbbe0.css",
-    "main.js": "/website-tailwind-react/static/js/main.a4fc2c1a.js",
-    "static/js/274.d0a0add0.chunk.js": "/website-tailwind-react/static/js/274.d0a0add0.chunk.js",
+    "main.css": "/website-tailwind-react/static/css/main.f0fc4d2a.css",
+    "main.js": "/website-tailwind-react/static/js/main.8268a318.js",
+    "static/js/274.dd8ee120.chunk.js": "/website-tailwind-react/static/js/274.dd8ee120.chunk.js",
     "static/js/453.21055ae6.chunk.js": "/website-tailwind-react/static/js/453.21055ae6.chunk.js",
-    "static/js/2.4bd4df9a.chunk.js": "/website-tailwind-react/static/js/2.4bd4df9a.chunk.js",
+    "static/js/2.8064e2e2.chunk.js": "/website-tailwind-react/static/js/2.8064e2e2.chunk.js",
     "index.html": "/website-tailwind-react/index.html",
     "static/media/github-icon-1-logo-svgrepo-com.svg": "/website-tailwind-react/static/media/github-icon-1-logo-svgrepo-com.cbbdd0c902376ddb076c5a0cd253936d.svg",
     "static/media/linkedin-icon-2-logo-svgrepo-com.svg": "/website-tailwind-react/static/media/linkedin-icon-2-logo-svgrepo-com.9d6c57806071247c3fcb086b59fa3daa.svg",
     "static/media/gmail-svgrepo-com.svg": "/website-tailwind-react/static/media/gmail-svgrepo-com.87cc67187afd3477d6c29ef768e48834.svg",
-    "main.cd3bbbe0.css.map": "/website-tailwind-react/static/css/main.cd3bbbe0.css.map",
-    "main.a4fc2c1a.js.map": "/website-tailwind-react/static/js/main.a4fc2c1a.js.map",
-    "274.d0a0add0.chunk.js.map": "/website-tailwind-react/static/js/274.d0a0add0.chunk.js.map",
+    "main.f0fc4d2a.css.map": "/website-tailwind-react/static/css/main.f0fc4d2a.css.map",
+    "main.8268a318.js.map": "/website-tailwind-react/static/js/main.8268a318.js.map",
+    "274.dd8ee120.chunk.js.map": "/website-tailwind-react/static/js/274.dd8ee120.chunk.js.map",
     "453.21055ae6.chunk.js.map": "/website-tailwind-react/static/js/453.21055ae6.chunk.js.map",
-    "2.4bd4df9a.chunk.js.map": "/website-tailwind-react/static/js/2.4bd4df9a.chunk.js.map"
+    "2.8064e2e2.chunk.js.map": "/website-tailwind-react/static/js/2.8064e2e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd3bbbe0.css",
-    "static/js/main.a4fc2c1a.js"
+    "static/css/main.f0fc4d2a.css",
+    "static/js/main.8268a318.js"
   ]
 }
