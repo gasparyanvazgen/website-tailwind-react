@@ -1,7 +1,7 @@
 // public landing page - temporary under development mode with notify signup
 
 import React from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import Seo from "../components/Seo";
 import githubIcon from "../assets/icons/github-icon-1-logo-svgrepo-com.svg";
 import linkedinIcon from "../assets/icons/linkedin-icon-2-logo-svgrepo-com.svg";
@@ -15,6 +15,11 @@ const socialItems = [
 
 function Home() {
   const [state, handleSubmit] = useForm("xppzznlk");
+
+  // Extract email field errors to display a custom clean message
+  const emailErrors = state.errors?.getFormErrors().length
+    ? state.errors.getFormErrors()
+    : state.errors?.getFieldErrors("email");
 
   return (
     <div className="min-h-screen bg-primary text-white flex flex-col justify-between px-6 py-10">
@@ -51,7 +56,7 @@ function Home() {
           Under Development
         </div>
 
-        {/* Main Headline with Accent Gradient */}
+        {/* Main Headline */}
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white mb-4 leading-tight">
           Something new is{" "}
           <span className="text-accentBlueLight">
@@ -59,19 +64,19 @@ function Home() {
           </span>
         </h1>
 
-        {/* Subtitle / Paragraph */}
+        {/* Subtitle */}
         <p className="text-neutral-300/90 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto font-normal">
           I am currently rebuilding my website to share new projects and experiences. Leave your email below to get notified when it goes live.
         </p>
 
-        {/* Formspree Email Form */}
+        {/* Email Form */}
         <div className="mb-10 max-w-md mx-auto">
           {state.succeeded ? (
             <div className="rounded-xl border border-green-500/30 bg-green-500/15 p-4 text-green-400 text-sm font-medium shadow-sm flex items-center justify-center gap-2">
               <span className="text-base">✓</span> Thank you! I will notify you as soon as the site is ready.
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-2">
               <input
                 type="hidden"
                 name="subject"
@@ -83,34 +88,36 @@ function Home() {
                 value="This user subscribed to be notified when your new website launches."
               />
 
-              <div className="relative flex-1">
+              {/* Form Input Row */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-start gap-2.5">
                 <input
                   name="email"
                   type="email"
                   required
                   placeholder="Enter your email address..."
-                  className="w-full rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-neutral-400 outline-none transition focus:border-accentBlue focus:ring-2 focus:ring-accentBlue/30"
+                  className="w-full flex-1 rounded-xl border border-white/15 bg-white/5 px-4 py-3.5 text-sm text-white placeholder:text-neutral-400 outline-none transition focus:border-accentBlue focus:ring-2 focus:ring-accentBlue/30"
                 />
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
-                  className="mt-1 text-left text-xs text-red-400"
-                />
+
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="w-full sm:w-auto rounded-xl bg-accentBlue px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-accentBlueDark disabled:opacity-50 shrink-0 shadow-lg shadow-accentBlue/20"
+                >
+                  {state.submitting ? "Submitting..." : "Notify Me"}
+                </button>
               </div>
 
-              <button
-                type="submit"
-                disabled={state.submitting}
-                className="rounded-xl bg-accentBlue px-6 py-3 text-sm font-semibold text-white transition hover:bg-accentBlueDark disabled:opacity-50 shrink-0 shadow-lg shadow-accentBlue/20"
-              >
-                {state.submitting ? "Submitting..." : "Notify Me"}
-              </button>
+              {/* Custom Error Message */}
+              {emailErrors && emailErrors.length > 0 && (
+                <p className="text-left text-xs font-medium text-red-400 px-1 mt-1 flex items-center gap-1">
+                  Please enter a valid email address.
+                </p>
+              )}
             </form>
           )}
         </div>
 
-        {/* Social & Contact Icons */}
+        {/* Social Icons */}
         <div className="flex justify-center items-center gap-3">
           {socialItems.map((item) => (
             <a
